@@ -2,7 +2,7 @@
     "name": "freethinkerz/laravel-pay",
     "description": "A laravel Payment Gateway wrapper for MeSomb and NotchPay",
     "license": "MIT",
-    "version": "1.8.0",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "FreeThinkerz",
