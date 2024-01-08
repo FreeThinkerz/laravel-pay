@@ -15,7 +15,7 @@ trait HasPayments
      */
     public function payments()
     {
-        return $this->morphMany('FreeThinkerz\LaravelPay\Model\Payment', 'payable');
+        return $this->morphMany(\FreeThinkerz\LaravelPay\Model\Payment::class, 'payable');
     }
 
     /**
