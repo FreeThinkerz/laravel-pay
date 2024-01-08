@@ -1,8 +1,8 @@
 <?php
 
-namespace Hachther\MeSomb\Helper;
+namespace FreeThinkerz\LaravelPay\Helper;
 
-use Hachther\MeSomb\Builder\DepositBuilder;
+use FreeThinkerz\LaravelPay\Builder\DepositBuilder;
 
 trait HasDeposits
 {
@@ -13,7 +13,7 @@ trait HasDeposits
      */
     public function deposits()
     {
-        return $this->morphMany('Hachther\MeSomb\Model\Deposit', 'depositable');
+        return $this->morphMany('FreeThinkerz\LaravelPay\Model\Deposit', 'depositable');
     }
 
     /**

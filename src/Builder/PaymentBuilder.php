@@ -1,9 +1,9 @@
 <?php
 
-namespace Hachther\MeSomb\Builder;
+namespace FreeThinkerz\LaravelPay\Builder;
 
-use Hachther\MeSomb\Helper\PaymentData;
-use Hachther\MeSomb\Operation\Payment\Collect;
+use FreeThinkerz\LaravelPay\Helper\PaymentData;
+use FreeThinkerz\LaravelPay\Operation\Payment\Collect;
 
 class PaymentBuilder
 {
@@ -39,7 +39,7 @@ class PaymentBuilder
     /**
      * Make Model Collect.
      *
-     * @return \Hachther\MeSomb\Model\Payment
+     * @return \FreeThinkerz\LaravelPay\Model\Payment
      */
     public function pay()
     {

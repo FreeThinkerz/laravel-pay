@@ -1,16 +1,16 @@
 <?php
 
-namespace Hachther\MeSomb\Operation\Payment;
+namespace FreeThinkerz\LaravelPay\Operation\Payment;
 
 use DateTime;
-use Hachther\MeSomb\Helper\SignedRequest;
-use Hachther\MeSomb\Model\Payment;
-use Hachther\MeSomb\Operation\Signature;
+use FreeThinkerz\LaravelPay\Helper\SignedRequest;
+use FreeThinkerz\LaravelPay\Model\Payment;
+use FreeThinkerz\LaravelPay\Operation\Signature;
 use Illuminate\Http\Client\RequestException;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Http;
-use Hachther\MeSomb\Model\Transaction as ModelTransaction;
+use FreeThinkerz\LaravelPay\Model\Transaction as ModelTransaction;
 
 class Transaction
 {
@@ -58,7 +58,7 @@ class Transaction
     /**
      * Check Transaction status.
      *
-     * @param \Hachther\MeSomb\Model\Deposit|Payment $model
+     * @param \FreeThinkerz\LaravelPay\Model\Deposit|Payment $model
      *
      * @return array
      * @throws RequestException

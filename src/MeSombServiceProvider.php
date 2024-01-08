@@ -1,6 +1,6 @@
 <?php
 
-namespace Hachther\MeSomb;
+namespace FreeThinkerz\LaravelPay;
 
 use Illuminate\Support\ServiceProvider;
 

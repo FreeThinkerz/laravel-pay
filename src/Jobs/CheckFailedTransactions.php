@@ -1,14 +1,14 @@
 <?php
 
-namespace Hachther\MeSomb\Jobs;
+namespace FreeThinkerz\LaravelPay\Jobs;
 
-use Hachther\MeSomb\Model\Deposit;
-use Hachther\MeSomb\Model\Payment;
+use FreeThinkerz\LaravelPay\Model\Deposit;
+use FreeThinkerz\LaravelPay\Model\Payment;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\{InteractsWithQueue, SerializesModels};
-use Hachther\MeSomb\Operation\Payment\Transaction;
+use FreeThinkerz\LaravelPay\Operation\Payment\Transaction;
 
 class CheckFailedTransactions implements ShouldQueue
 {

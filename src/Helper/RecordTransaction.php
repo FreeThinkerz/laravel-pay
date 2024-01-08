@@ -1,11 +1,11 @@
 <?php
 
-namespace Hachther\MeSomb\Helper;
+namespace FreeThinkerz\LaravelPay\Helper;
 
 use Illuminate\Support\{Arr, Carbon};
-use Hachther\MeSomb\Model\Deposit;
-use Hachther\MeSomb\Model\Payment;
-use Hachther\MeSomb\Model\Transaction;
+use FreeThinkerz\LaravelPay\Model\Deposit;
+use FreeThinkerz\LaravelPay\Model\Payment;
+use FreeThinkerz\LaravelPay\Model\Transaction;
 
 trait RecordTransaction
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Hachther\MeSomb\Builder;
+namespace FreeThinkerz\LaravelPay\Builder;
 
-use Hachther\MeSomb\Operation\Payment\Deposit;
-use Hachther\MeSomb\Helper\DepositData;
+use FreeThinkerz\LaravelPay\Operation\Payment\Deposit;
+use FreeThinkerz\LaravelPay\Helper\DepositData;
 
 class DepositBuilder
 {
@@ -28,7 +28,7 @@ class DepositBuilder
     /**
      * Make Deposit.
      *
-     * @return \Hachther\MeSomb\Model\Deposit
+     * @return \FreeThinkerz\LaravelPay\Model\Deposit
      */
     public function pay()
     {

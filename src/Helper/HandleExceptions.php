@@ -1,18 +1,18 @@
 <?php
 
-namespace Hachther\MeSomb\Helper;
+namespace FreeThinkerz\LaravelPay\Helper;
 
-use Hachther\MeSomb\Exceptions\ApplicationNotFoundException;
-use Hachther\MeSomb\Exceptions\AuthenticationException;
-use Hachther\MeSomb\Exceptions\InsufficientBalanceException;
-use Hachther\MeSomb\Exceptions\InvalidAmountException;
-use Hachther\MeSomb\Exceptions\InvalidClientRequestException;
-use Hachther\MeSomb\Exceptions\InvalidPhoneNumberException;
-use Hachther\MeSomb\Exceptions\InvalidPinException;
-use Hachther\MeSomb\Exceptions\PermissionDeniedException;
-use Hachther\MeSomb\Exceptions\ServerException;
-use Hachther\MeSomb\Exceptions\ServiceNotFoundException;
-use Hachther\MeSomb\Exceptions\TimeoutException;
+use FreeThinkerz\LaravelPay\Exceptions\ApplicationNotFoundException;
+use FreeThinkerz\LaravelPay\Exceptions\AuthenticationException;
+use FreeThinkerz\LaravelPay\Exceptions\InsufficientBalanceException;
+use FreeThinkerz\LaravelPay\Exceptions\InvalidAmountException;
+use FreeThinkerz\LaravelPay\Exceptions\InvalidClientRequestException;
+use FreeThinkerz\LaravelPay\Exceptions\InvalidPhoneNumberException;
+use FreeThinkerz\LaravelPay\Exceptions\InvalidPinException;
+use FreeThinkerz\LaravelPay\Exceptions\PermissionDeniedException;
+use FreeThinkerz\LaravelPay\Exceptions\ServerException;
+use FreeThinkerz\LaravelPay\Exceptions\ServiceNotFoundException;
+use FreeThinkerz\LaravelPay\Exceptions\TimeoutException;
 use Illuminate\Http\Client\Response;
 
 trait HandleExceptions

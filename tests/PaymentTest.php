@@ -5,8 +5,8 @@ namespace Tests\Unit;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\{Config, Http};
 use Illuminate\Support\{Arr, Str};
-use Hachther\MeSomb\Exceptions\{InsufficientBalanceException, InvalidPhoneNumberException, InvalidPinException};
-use Hachther\MeSomb\Payment;
+use FreeThinkerz\LaravelPay\Exceptions\{InsufficientBalanceException, InvalidPhoneNumberException, InvalidPinException};
+use FreeThinkerz\LaravelPay\Payment;
 use function Pest\Laravel\assertDatabaseHas;
 
 function fakePaymentResponse()

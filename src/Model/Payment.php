@@ -1,9 +1,9 @@
 <?php
 
-namespace Hachther\MeSomb\Model;
+namespace FreeThinkerz\LaravelPay\Model;
 
 use Illuminate\Database\Eloquent\Model;
-use Hachther\MeSomb\Helper\{HasDeposits, HasTransactions, ModelUUID};
+use FreeThinkerz\LaravelPay\Helper\{HasDeposits, HasTransactions, ModelUUID};
 
 class Payment extends Model
 {
@@ -50,7 +50,7 @@ class Payment extends Model
     /**
      * Refund Payment.
      *
-     * @return null|\Hachther\MeSomb\Model\Deposit
+     * @return null|\FreeThinkerz\LaravelPay\Model\Deposit
      */
     public function refund()
     {

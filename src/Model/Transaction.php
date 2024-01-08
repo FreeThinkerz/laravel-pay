@@ -1,9 +1,9 @@
 <?php
 
-namespace Hachther\MeSomb\Model;
+namespace FreeThinkerz\LaravelPay\Model;
 
 use Illuminate\Database\Eloquent\Model;
-use Hachther\MeSomb\Helper\ModelUUID;
+use FreeThinkerz\LaravelPay\Helper\ModelUUID;
 
 class Transaction extends Model
 {

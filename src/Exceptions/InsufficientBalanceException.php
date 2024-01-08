@@ -1,6 +1,6 @@
 <?php
 
-namespace Hachther\MeSomb\Exceptions;
+namespace FreeThinkerz\LaravelPay\Exceptions;
 
 use Exception;
 

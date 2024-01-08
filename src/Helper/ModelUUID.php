@@ -1,6 +1,6 @@
 <?php
 
-namespace Hachther\MeSomb\Helper;
+namespace FreeThinkerz\LaravelPay\Helper;
 
 use Illuminate\Support\Str;
 

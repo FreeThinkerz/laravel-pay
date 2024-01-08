@@ -29,7 +29,7 @@
 
 
 
-* Full name: \Hachther\MeSomb\Operation\Payment\Application
+* Full name: \FreeThinkerz\LaravelPay\Operation\Payment\Application
 
 
 ### Application::status
@@ -37,7 +37,7 @@
 Get Cached Application Status | if null request fresh copy of Application Status.
 
 ```php
-Application::status(  ): array|\Hachther\MeSomb\Operation\Payment\json
+Application::status(  ): array|\FreeThinkerz\LaravelPay\Operation\Payment\json
 ```
 
 
@@ -76,7 +76,7 @@ Application::checkStatus(  ): array
 
 
 
-* Full name: \Hachther\MeSomb\Operation\Payment\Collect
+* Full name: \FreeThinkerz\LaravelPay\Operation\Payment\Collect
 
 
 ### Collect::__construct
@@ -117,7 +117,7 @@ Collect::__construct( string payer, int amount, string service, string country =
 Send Collect Request.
 
 ```php
-Collect::pay(  ): \Hachther\MeSomb\Model\Payment|null
+Collect::pay(  ): \FreeThinkerz\LaravelPay\Model\Payment|null
 ```
 
 
@@ -212,7 +212,7 @@ Collect::setProduct( array product ): void
 
 
 
-* Full name: \Hachther\MeSomb\Operation\Payment\Deposit
+* Full name: \FreeThinkerz\LaravelPay\Operation\Payment\Deposit
 
 
 ### Deposit::__construct
@@ -250,7 +250,7 @@ Deposit::__construct( string receiver, int amount, string service, string countr
 Make Deposit Request.
 
 ```php
-Deposit::pay(  ): \Hachther\MeSomb\Model\Deposit
+Deposit::pay(  ): \FreeThinkerz\LaravelPay\Model\Deposit
 ```
 
 
@@ -270,7 +270,7 @@ Deposit::pay(  ): \Hachther\MeSomb\Model\Deposit
 
 
 
-* Full name: \Hachther\MeSomb\Operation\Signature
+* Full name: \FreeThinkerz\LaravelPay\Operation\Signature
 
 
 ### Signature::signRequest
@@ -336,7 +336,7 @@ Signature::nonceGenerator( int length = 40 ): string
 
 
 
-* Full name: \Hachther\MeSomb\Operation\Payment\Transaction
+* Full name: \FreeThinkerz\LaravelPay\Operation\Payment\Transaction
 
 
 ### Transaction::generateURL
@@ -370,7 +370,7 @@ Transaction::generateURL( string endpoint, array ids ): string
 Check Transaction status.
 
 ```php
-Transaction::checkStatus( \Hachther\MeSomb\Model\Deposit|\Hachther\MeSomb\Model\Payment model ): array
+Transaction::checkStatus( \FreeThinkerz\LaravelPay\Model\Deposit|\FreeThinkerz\LaravelPay\Model\Payment model ): array
 ```
 
 
@@ -380,7 +380,7 @@ Transaction::checkStatus( \Hachther\MeSomb\Model\Deposit|\Hachther\MeSomb\Model\
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `model` | **\Hachther\MeSomb\Model\Deposit\|\Hachther\MeSomb\Model\Payment** |  |
+| `model` | **\FreeThinkerz\LaravelPay\Model\Deposit\|\FreeThinkerz\LaravelPay\Model\Payment** |  |
 
 
 **Return Value:**

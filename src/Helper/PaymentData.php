@@ -1,9 +1,14 @@
 <?php
 
-namespace Hachther\MeSomb\Helper;
+namespace FreeThinkerz\LaravelPay\Helper;
 
 trait PaymentData
 {
+    /**
+     * The mobile number to use for payment
+     */
+    protected $payer;
+
     /**
      * Amount to be Paid for Service.
      *
@@ -97,7 +102,7 @@ trait PaymentData
      *
      * @param int|string $value
      *
-     * @return \Hachther\MeSomb\Payment
+     * @return \FreeThinkerz\LaravelPay\Payment
      */
     public function payer($value)
     {
@@ -111,7 +116,7 @@ trait PaymentData
      *
      * @param string $value
      *
-     * @return \Hachther\MeSomb\Payment
+     * @return \FreeThinkerz\LaravelPay\Payment
      */
     public function phone($value)
     {
@@ -123,7 +128,7 @@ trait PaymentData
      *
      * @param int|string $value
      *
-     * @return \Hachther\MeSomb\Payment
+     * @return \FreeThinkerz\LaravelPay\Payment
      */
     public function amount($value)
     {
@@ -137,7 +142,7 @@ trait PaymentData
      *
      * @param string $value
      *
-     * @return \Hachther\MeSomb\Payment
+     * @return \FreeThinkerz\LaravelPay\Payment
      */
     public function reference($value)
     {
@@ -151,7 +156,7 @@ trait PaymentData
      *
      * @param string $value
      *
-     * @return \Hachther\MeSomb\Payment
+     * @return \FreeThinkerz\LaravelPay\Payment
      */
     public function message($value)
     {
@@ -165,7 +170,7 @@ trait PaymentData
      *
      * @param string $value
      *
-     * @return \Hachther\MeSomb\Payment
+     * @return \FreeThinkerz\LaravelPay\Payment
      */
     public function currency($value)
     {
@@ -179,7 +184,7 @@ trait PaymentData
      *
      * @param string $value
      *
-     * @return \Hachther\MeSomb\Payment
+     * @return \FreeThinkerz\LaravelPay\Payment
      */
     public function service($value)
     {
@@ -193,7 +198,7 @@ trait PaymentData
      *
      * @param string $value
      *
-     * @return \Hachther\MeSomb\Payment
+     * @return \FreeThinkerz\LaravelPay\Payment
      */
     public function fees($value)
     {
@@ -207,7 +212,7 @@ trait PaymentData
      *
      * @param string $value
      *
-     * @return \Hachther\MeSomb\Payment
+     * @return \FreeThinkerz\LaravelPay\Payment
      */
     public function requestID($value)
     {

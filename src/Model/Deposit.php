@@ -1,9 +1,9 @@
 <?php
 
-namespace Hachther\MeSomb\Model;
+namespace FreeThinkerz\LaravelPay\Model;
 
 use Illuminate\Database\Eloquent\Model;
-use Hachther\MeSomb\Helper\{HasTransactions, ModelUUID};
+use FreeThinkerz\LaravelPay\Helper\{HasTransactions, ModelUUID};
 
 class Deposit extends Model
 {

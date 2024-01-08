@@ -1,13 +1,13 @@
 <?php
 
-namespace Hachther\MeSomb\Operation\Payment;
+namespace FreeThinkerz\LaravelPay\Operation\Payment;
 
-use Hachther\MeSomb\Helper\HandleExceptions;
-use Hachther\MeSomb\Helper\PaymentData;
-use Hachther\MeSomb\Helper\RecordTransaction;
-use Hachther\MeSomb\Helper\SignedRequest;
-use Hachther\MeSomb\Model\Payment as PaymentModel;
-use Hachther\MeSomb\Operation\Signature;
+use FreeThinkerz\LaravelPay\Helper\HandleExceptions;
+use FreeThinkerz\LaravelPay\Helper\PaymentData;
+use FreeThinkerz\LaravelPay\Helper\RecordTransaction;
+use FreeThinkerz\LaravelPay\Helper\SignedRequest;
+use FreeThinkerz\LaravelPay\Model\Payment as PaymentModel;
+use FreeThinkerz\LaravelPay\Operation\Signature;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Http;
@@ -151,10 +151,10 @@ class Collect
      * Send Collect Request.
      *
      * @return PaymentModel|null
-     * @throws \Hachther\MeSomb\Exceptions\InvalidClientRequestException
-     * @throws \Hachther\MeSomb\Exceptions\PermissionDeniedException
-     * @throws \Hachther\MeSomb\Exceptions\ServerException
-     * @throws \Hachther\MeSomb\Exceptions\ServiceNotFoundException
+     * @throws \FreeThinkerz\LaravelPay\Exceptions\InvalidClientRequestException
+     * @throws \FreeThinkerz\LaravelPay\Exceptions\PermissionDeniedException
+     * @throws \FreeThinkerz\LaravelPay\Exceptions\ServerException
+     * @throws \FreeThinkerz\LaravelPay\Exceptions\ServiceNotFoundException
      */
     public function pay(): ?PaymentModel
     {

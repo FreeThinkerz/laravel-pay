@@ -1,6 +1,6 @@
 <?php
 
-namespace Hachther\MeSomb\Helper;
+namespace FreeThinkerz\LaravelPay\Helper;
 
 trait DepositData
 {
@@ -31,7 +31,7 @@ trait DepositData
      *
      * @param int|string $value
      *
-     * @return Hachther\MeSomb\Payment
+     * @return FreeThinkerz\LaravelPay\Payment
      */
     public function receiver($value)
     {
@@ -57,7 +57,7 @@ trait DepositData
      *
      * @param int|string $value
      *
-     * @return Hachther\MeSomb\Payment
+     * @return FreeThinkerz\LaravelPay\Payment
      */
     public function amount($value)
     {
@@ -71,7 +71,7 @@ trait DepositData
      *
      * @param string $value
      *
-     * @return Hachther\MeSomb\Payment
+     * @return FreeThinkerz\LaravelPay\Payment
      */
     public function service($value)
     {

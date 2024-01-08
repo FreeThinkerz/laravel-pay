@@ -1,6 +1,6 @@
 <?php
 
-namespace Hachther\MeSomb\Operation;
+namespace FreeThinkerz\LaravelPay\Operation;
 
 class Signature
 {

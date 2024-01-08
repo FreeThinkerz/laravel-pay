@@ -59,7 +59,7 @@ php artisan migrate
 
 ```php
 // OrderController.php
-use Hachther\MeSomb\Operation\Payment\Collect;
+use FreeThinkerz\LaravelPay\Operation\Payment\Collect;
 
 class OrderController extends Controller {
 
@@ -84,7 +84,7 @@ class OrderController extends Controller {
 
 ```php
 // OrderController.php
-use Hachther\MeSomb\Operation\Payment\Deposit;
+use FreeThinkerz\LaravelPay\Operation\Payment\Deposit;
 
 class OrderController extends Controller {
 
@@ -111,7 +111,7 @@ class OrderController extends Controller {
 
 // Order.php
 
-use Hachther\MeSomb\Helper\HasPayments;
+use FreeThinkerz\LaravelPay\Helper\HasPayments;
 
 class Order extends Model
 {
@@ -152,7 +152,7 @@ This is how you process if you want to handle multiple MeSomb applications with 
 
 ```php
 // OrderController.php
-use Hachther\MeSomb\Operation\Payment\Collect;
+use FreeThinkerz\LaravelPay\Operation\Payment\Collect;
 
 class OrderController extends Controller {
 

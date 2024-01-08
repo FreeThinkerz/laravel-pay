@@ -3,7 +3,7 @@
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\{Config, Http};
 use Illuminate\Support\{Arr, Str};
-use Hachther\MeSomb\Deposit;
+use FreeThinkerz\LaravelPay\Deposit;
 use function Pest\Laravel\assertDatabaseHas;
 
 function fakeDepositResponse()

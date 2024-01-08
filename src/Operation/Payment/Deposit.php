@@ -1,15 +1,15 @@
 <?php
 
-namespace Hachther\MeSomb\Operation\Payment;
+namespace FreeThinkerz\LaravelPay\Operation\Payment;
 
-use Hachther\MeSomb\Helper\PaymentData;
-use Hachther\MeSomb\Operation\Signature;
+use FreeThinkerz\LaravelPay\Helper\PaymentData;
+use FreeThinkerz\LaravelPay\Operation\Signature;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Http;
-use Hachther\MeSomb\Helper\HandleExceptions;
-use Hachther\MeSomb\Helper\RecordTransaction;
-use Hachther\MeSomb\Model\Deposit as DepositModel;
+use FreeThinkerz\LaravelPay\Helper\HandleExceptions;
+use FreeThinkerz\LaravelPay\Helper\RecordTransaction;
+use FreeThinkerz\LaravelPay\Model\Deposit as DepositModel;
 
 class Deposit
 {
