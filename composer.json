@@ -1,12 +1,12 @@
 {
-    "name": "hachther/laravel-mesomb",
-    "description": "A laravel wrapper on top of Mesomb Payment API",
+    "name": "freethinkerz/laravel-pay",
+    "description": "A laravel Payment Gateway wrapper for MeSomb and NotchPay",
     "license": "MIT",
     "version": "1.8.0",
     "authors": [
         {
-            "name": "Hachther LLC",
-            "email": "contact@hachther.com"
+            "name": "FreeThinkerz",
+            "email": "mundestephane13@gmail.com"
         }
     ],
     "require": {
@@ -16,18 +16,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Hachther\\MeSomb\\": "src/"
+            "FreeThinkerz\\LaravelPay\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Hachther\\MeSomb\\Tests\\": "tests"
+            "FreeThinkerz\\LaravelPay\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Hachther\\MeSomb\\MeSombServiceProvider"
+                "FreeThinkerz\\LaravelPay\\MeSombServiceProvider"
             ]
         }
     },
@@ -55,7 +55,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/hachther/laravel-mesomb"
+            "url": "https://github.com/FreeThinkerz/laravel-pay"
         }
     ]
 }
