@@ -1,13 +1,13 @@
 # Laravel MeSomb
 
-Laravel Wrapper on top of MeSomb Payment API
+A laravel Payment Gateway wrapper for MeSomb and NotchPay
 
 ## Roadmap
 
 API Features and their implementations [https://mesomb.hachther.com/en/api/v1.1/schema/](https://mesomb.hachther.com/en/api/v1.1/schema/)
 
 | Feature              | Status  | Documentation                                                    |
-|----------------------|---------|------------------------------------------------------------------|
+| -------------------- | ------- | ---------------------------------------------------------------- |
 | Payment              | &#9745; | [Check the documentation](docs/README.md#Collect)                |
 | Transaction Status   | &#9745; | [Check the documentation](docs/README.md#TransactioncheckStatus) |
 | Application Status   | &#9745; | [Check the documentation](docs/README.md#ApplicationcheckStatus) |
@@ -22,7 +22,7 @@ Before you start, you must register your service and MeSomb and get API Access k
 ### Install Package
 
 ```shell
-composer require hachther/laravel-mesomb
+composer require freethinkerz/laravel-pay
 ```
 
 ### Publish Configuration Files
@@ -30,6 +30,7 @@ composer require hachther/laravel-mesomb
 Setting the following parameters from MeSomb
 
 Get the information below from MeSomb after following the above tutorial.
+
 ```dotenv
 MESOMB_APP_KEY=<ApplicationKey>
 MESOMB_API_HOST=https://mesomb.hachther.com
@@ -177,7 +178,12 @@ class OrderController extends Controller {
 
 ## Author
 
-Hachther LLC
-[contact@hachther.com](contact@hachther.com)
+FreeThinkerz
+https://github.com/FreeThinkerz
+
+## Apreciations
 
 Thank you to Malico ([hi@malico.me](hi@malico.me)) for starting this module.
+
+Hachther LLC (For Adding updates to the module)
+[contact@hachther.com](contact@hachther.com)
