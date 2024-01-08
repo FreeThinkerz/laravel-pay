@@ -29,7 +29,7 @@ trait HasPayments
      */
     public function payment(string $payer = null, float|int $amount = null, string $service = null): PaymentBuilder
     {
-        return new PaymentBuilder($this, $payer, $amount, $service);
+        return new PaymentBuilder($this, $payer, $amount, $service ?? $this->getPaymentServiceFromPhone($payer));
     }
 
     /**
