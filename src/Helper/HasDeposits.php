@@ -24,8 +24,8 @@ trait HasDeposits
      *
      * @return DepositBuilder
      */
-    public function deposit(string $receiver = null, float|int $amount = null, string $service = null): DepositBuilder
+    public function deposit(string $receiver = null, float|int $amount = null): DepositBuilder
     {
-        return new DepositBuilder($this, $receiver, $amount, $service);
+        return new DepositBuilder($this, $receiver, $amount);
     }
 }
