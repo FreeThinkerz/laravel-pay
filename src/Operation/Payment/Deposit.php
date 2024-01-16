@@ -2,6 +2,7 @@
 
 namespace FreeThinkerz\LaravelPay\Operation\Payment;
 
+use Exception;
 use FreeThinkerz\LaravelPay\Helper\PaymentData;
 use FreeThinkerz\LaravelPay\Operation\Signature;
 use Illuminate\Support\Arr;
@@ -10,6 +11,7 @@ use Illuminate\Support\Facades\Http;
 use FreeThinkerz\LaravelPay\Helper\HandleExceptions;
 use FreeThinkerz\LaravelPay\Helper\RecordTransaction;
 use FreeThinkerz\LaravelPay\Model\Deposit as DepositModel;
+use Illuminate\Support\Str;
 
 class Deposit
 {
@@ -81,7 +83,7 @@ class Deposit
 
         $this->receiver = $receiver;
         $this->amount = $amount;
-        $this->service = $service;
+        $this->service = $service ?? $this->getPaymentServiceFromPhone(trim($payer, '+'));
         $this->country = $country ?? 'CM';
         $this->currency = $currency;
         $this->conversion = $conversion;
@@ -122,13 +124,13 @@ class Deposit
             'country'  => $this->country,
             'currency'  => $this->currency,
             'conversion'  => $this->conversion,
-            'receiver'=> trim($this->receiver, '+'),
-            'customer'=> $this->customer,
-            'location'=> $this->location,
-            'product'=> $this->product,
+            'receiver' => trim($this->receiver, '+'),
+            'customer' => $this->customer,
+            'location' => $this->location,
+            'product' => $this->product,
         ];
 
-        return array_filter($this->saveDeposit($data), fn ($val) => ! is_null($val));
+        return array_filter($this->saveDeposit($data), fn ($val) => !is_null($val));
     }
 
     /**
@@ -151,7 +153,7 @@ class Deposit
     public function pay(): DepositModel
     {
         $data = $this->prepareData();
-        $data['source'] = 'Laravel/v'.\app()->version();
+        $data['source'] = 'Laravel/v' . \app()->version();
         $ip = request()->ip();
         if (empty($data['location'])) {
             $data['location'] = array(
@@ -235,5 +237,19 @@ class Deposit
     public function setSecretKey(string $secretKey): void
     {
         $this->secretKey = $secretKey;
+    }
+
+    /**
+     *  Get the payment service from from the phone number
+     */
+    public function getPaymentServiceFromPhone(string $phone): string | Exception
+    {
+        if (Str::match('/^(?:\+237|237)?6(?:5[0-4]|[87][0-9])\d{6}$/', $phone)) {
+            return 'MTN';
+        } elseif (Str::match('/^(?:\+237|237)?6(?:5[5-9]|[9][0-9])\d{6}$/', $phone)) {
+            return 'Orange';
+        } else {
+            throw new Exception("Invalid Payment Number: {$phone}");
+        }
     }
 }
