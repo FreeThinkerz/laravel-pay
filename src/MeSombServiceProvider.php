@@ -26,7 +26,7 @@ class MeSombServiceProvider extends ServiceProvider
     {
         $this->publishes(
             [
-                __DIR__ . '/../config/mesomb.php' => config_path('mesomb.php'),
+                __DIR__ . '/../config/laravel-pay.php' => config_path('laravel-pay.php'),
             ],
             'mesomb-configuration'
         );
@@ -40,7 +40,7 @@ class MeSombServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/mesomb.php',
+            __DIR__ . '/../config/laravel-pay.php',
             'mesomb'
         );
     }
